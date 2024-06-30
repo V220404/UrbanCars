@@ -1,4 +1,4 @@
-import { Hero } from "@/components";
+import { CarCard, Hero } from "@/components";
 import CustomFilter from "@/components/CustomFilter";
 import SearchBar from "@/components/SearchBar";
 import Image from "next/image";
@@ -22,8 +22,10 @@ const isDataEmpty = !Array.isArray(allCars) || allCars.length <1 || !allCars;
 <div className="home__filter">
   <SearchBar/>
   <div className="home__filter-container">
-<CustomFilter  title="fuel"/>
-<CustomFilter title="year"/>
+{/* <CustomFilter  title="fuel"/>
+<CustomFilter title="year"/> */}
+<CustomFilter  />
+<CustomFilter />
   </div>
 </div>
 {!isDataEmpty ? (
