@@ -85,6 +85,8 @@ handleClick={()=> setIsOpen(true)}
       isOpen={isOpen}
       closeModal={() =>setIsOpen(false) car={car}}
       /> */}
+
+<CarDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} car={car} />
     </div>
   )
 }
