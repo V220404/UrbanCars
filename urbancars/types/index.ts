@@ -50,3 +50,8 @@ year:number  ;
     options : OptionProps[];
 
   }
+
+  export interface ShowMoreProps {
+    pageNumber: number;
+    isNext: boolean;
+  }
